@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ejercicio3.1.6</string>
+    <string name="pathText">Nombre de la carpeta</string>
+    <string name="bt_text">GO!</string>
+</resources>
