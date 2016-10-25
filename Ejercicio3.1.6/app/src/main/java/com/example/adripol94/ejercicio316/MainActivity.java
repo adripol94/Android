@@ -50,7 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     /**
      * Pone visible/invisible la barra del Path[@id/pathImg].
-     *
+     * <li>Obtendrá el Path especificado en el EditText</li>
+     * <li>Llamará a @this.chargerBitmap</li>
+     * <li>Mostrará la primera imagen del array bitmap</li> <br>
+     *  En caso de no existir dicha carpeta aparecerá Toast error
      * @param v
      */
     public void showImages(View v) {
@@ -82,16 +85,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * Carga el array this.bitmap del archivo especidicado
+     * Carga las imagenes de la carpeta especificada en @this.f. Solo cargará imagenes jpg y jpeg
      *
-     * @throws OutSidePermittedRangeException En la carpeta hay más imagenes de las soportada.
+     * @throws OutSidePermittedRangeException En la carpeta hay más imagenes de las soportada (@this.MAXIMO_IMG).
      */
 
     private void chargerBitmap() throws OutSidePermittedRangeException {
         File file[];
 
         // Se que deberia de comprobar primero el numero de archivos antes de siquiera crear el array pero no sé como hacerlo
-        // @IMPORTANT FILENAME Comprueba si tiene extension jpg y jpeg
+        // @IMPORTANT FILENAMEFILTER Comprueba si tiene extension jpg y jpeg
         file = f.listFiles(new FilenameFilter() {
             @Override
             public boolean accept(File dir, String name) {
@@ -121,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * Se mueve por el array de bitmap con un contador C para visualizar la imagen
+     * Se mueve por el array de bitmap con un contador (@this.c) para visualizar la imagen
      *
      * @param v The view that was clicked.
      */
