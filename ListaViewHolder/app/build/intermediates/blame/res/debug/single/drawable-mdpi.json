@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_search.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/drawable-mdpi/ic_action_search.png"
+    }
+]

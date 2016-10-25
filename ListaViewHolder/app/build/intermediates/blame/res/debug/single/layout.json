@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/layout/activity_lista_view_holder.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/layout/activity_lista_view_holder.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/layout/row.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/layout/row.xml"
+    }
+]

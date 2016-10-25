@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaDinamica/app/build/intermediates/res/merged/debug/layout/activity_lista_dinamica.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaDinamica/app/src/main/res/layout/activity_lista_dinamica.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaDinamica/app/build/intermediates/res/merged/debug/layout/row.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaDinamica/app/src/main/res/layout/row.xml"
+    }
+]

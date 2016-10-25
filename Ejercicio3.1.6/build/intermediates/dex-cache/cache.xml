@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_cab3343ccd0a53a69518424d0919017827353d4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_f6c35ce8b4dcccb389b42fcee7e6c786599611a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3344bf0758c247e46d76e47755428835e8f9bf31">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_7d13d0bf01bc04e193e9e33409f3d94633533bdb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_e4d1471aa9b40267486677d7b923c5436ed572f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_45d8ec6d2762a0162026d8859dce1ee410c722c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_68a2c4d65abccdd0153563617ade074ca57d2243.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_b9cb1ab29d0b1081d4af09eeb7c99c542d9fb1b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_17873e8ebe9c613fd5cad0e954391350eb331be1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_cdca8cb2c47f575f391e798149825daaffb81404.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_2592307c4f1082366069acd72cbc9ec786698e99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_fb27d168329294b75e52433ba82844c083676ddc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_31e1ad69995908adad4eeffc845d1f0cbad3bc5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_70669096088efb820087210b776aa24d327dbcd8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_cb927d39fb56d790101ef0f3914787926d284acd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d20698f0c891b65ba5ee1cda4795b9307ca3cbf9">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/instant-run_cbe21605ecd321320b60d02e3c38387e3f579edd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_4478c6dadd19b0e79e67077465555dc47ae1ae13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/apol/AndroidStudioProjects/Android/Ejercicio3.1.6/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_f0628085e40cf3b2de851f8d2fd1686b686c2670.jar" />
+    </item>
+
+</items>

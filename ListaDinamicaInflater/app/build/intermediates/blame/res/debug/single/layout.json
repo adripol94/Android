@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaDinamicaInflater/app/build/intermediates/res/merged/debug/layout/row.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaDinamicaInflater/app/src/main/res/layout/row.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaDinamicaInflater/app/build/intermediates/res/merged/debug/layout/activity_lista_dinamica_inflater.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaDinamicaInflater/app/src/main/res/layout/activity_lista_dinamica_inflater.xml"
+    }
+]

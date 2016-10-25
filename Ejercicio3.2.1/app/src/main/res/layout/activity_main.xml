@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="es.iesnervion.apol.ejercicio321.MainActivity">
+
+    <CheckBox
+        android:text="@string/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbRed"
+        android:layout_below="@+id/cbBold"
+        android:layout_alignStart="@+id/cbBold"
+        android:onClick="setRed"/>
+
+    <CheckBox
+        android:text="@string/small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbSmall"
+        android:layout_alignBaseline="@+id/cbRed"
+        android:layout_alignBottom="@+id/cbRed"
+        android:layout_alignStart="@+id/gbGiatn"
+        android:onClick="setSmall"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_marginTop="60dp"
+        android:id="@+id/et_txt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:text="@string/bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbBold"
+        android:onClick="setBold"
+        android:layout_alignBaseline="@+id/gbGiatn"
+        android:layout_alignBottom="@+id/gbGiatn"
+        android:layout_toEndOf="@+id/gbGiatn" />
+
+    <CheckBox
+        android:text="@string/giant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="107dp"
+        android:id="@+id/gbGiatn"
+        android:onClick="setBig"
+        android:layout_marginStart="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/et_txt" />
+</RelativeLayout>

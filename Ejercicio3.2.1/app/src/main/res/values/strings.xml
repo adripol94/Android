@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio3.2.1</string>
+    <string name="bold">Bold</string>
+    <string name="red">Red</string>
+    <string name="giant">Big</string>
+    <string name="small">Small</string>
+</resources>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaDinamicaInflater/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_search.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaDinamicaInflater/app/src/main/res/drawable-mdpi/ic_action_search.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaDinamicaInflater/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaDinamicaInflater/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]
