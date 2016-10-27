@@ -1,31 +1,32 @@
 package es.iesnervion.apol.ejercicio411;
 
-import android.os.Parcelable;
-
 /**
- * Created by apol on 20/10/16.
+ * Created by apol on 27/10/16.
  */
 
-public class Team {
-    private String nombreCompleto;
-    private int fotoPerfil;
-    private String descripcion;
+public class Team implements ListReady {
+    private String name;
+    private String description;
+    private int img;
 
-    public Team(String nombreEquipo, int fotoPefil, String descripcion) {
-        this.nombreCompleto = nombreEquipo;
-        this.fotoPerfil = fotoPefil;
-        this.descripcion = descripcion;
+    public Team (String name, String description, int img) {
+        this.name = name;
+        this.description = description;
+        this.img = img;
     }
 
-    public String getNombreCompleto() {
-        return nombreCompleto;
+
+
+    public String getDescription() {
+        return description;
     }
 
-    public int getFotoPerfil() {
-        return fotoPerfil;
+    public int getImg() {
+        return img;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    @Override
+    public String getName() {
+        return name;
     }
 }
