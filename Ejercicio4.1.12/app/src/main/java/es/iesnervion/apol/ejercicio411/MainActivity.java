@@ -3,34 +3,30 @@ package es.iesnervion.apol.ejercicio411;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-import static es.iesnervion.apol.ejercicio411.R.layout.activity_main;
-import android.app.ListActivity;
-import android.content.Context;
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import es.iesnervion.apol.ejercicio411.Account.Account;
+import es.iesnervion.apol.ejercicio411.Account.Facebook;
+import es.iesnervion.apol.ejercicio411.Account.Google;
+import es.iesnervion.apol.ejercicio411.Account.Twitter;
 
 public class MainActivity extends ListActivity {
     TextView selection;
-    private static final Team[] items={
-            new Team("adasdds", "jajaj", R.drawable.grey),
-            new Team("adasdds", "jajaj", R.drawable.grey),
-            new Team("adds", "jajaj", R.drawable.grey),
-            new Team("adds", "jajaj", R.drawable.grey),
-            new Team("aadsdds", "jajaj", R.drawable.grey),
-            new Team("adds", "jajaj", R.drawable.grey),
-            new Team("adadsasdds", "jajaj", R.drawable.grey),
-            new Team("adds", "jajaj", R.drawable.grey),
-            new Team("adasdasdds", "jajaj", R.drawable.grey),
-            new Team("adds", "jajaj", R.drawable.grey),
-            new Team("adds", "jajaj", R.drawable.grey),
-            new Team("adadsds", "jajaj", R.drawable.grey),
+    private static final Account[] items={
+            new Twitter("Twitter", "email", "@account"),
+            new Twitter("Twitter", "email", "@account"),
+            new Twitter("Twitter", "email", "@account"),
+            new Facebook("Facebook", "Email", "@account"),
+            new Facebook("Facebook", "Email", "@account"),
+            new Google("Google", "Email", "@account"),
+            new Twitter("Twitter", "email", "@account"),
+            new Twitter("Twitter", "email", "@account"),
+            new Twitter("Twitter", "email", "@account"),
+            new Facebook("Facebook", "Email", "@account"),
+            new Facebook("Facebook", "Email", "@account"),
+            new Google("Google", "Email", "@account")
     };
 
     @Override
@@ -38,7 +34,7 @@ public class MainActivity extends ListActivity {
         super.onCreate(icicle);
         setContentView(R.layout.activity_main);
         try {
-            setListAdapter(new IconAdapter<Team>(this, R.layout.row, R.id.label, items));
+            setListAdapter(new IconAdapter<Account>(this, R.layout.row, R.id.label, items));
         } catch (ClassCastException e) {
             Toast.makeText(this, e.getMessage().toString(), Toast.LENGTH_LONG).show();
         }

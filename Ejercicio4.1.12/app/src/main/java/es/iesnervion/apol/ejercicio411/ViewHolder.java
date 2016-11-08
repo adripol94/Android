@@ -10,11 +10,17 @@ import android.widget.TextView;
 
 public class ViewHolder {
     TextView lab;
+    TextView account;
     ImageView img;
+    TextView desc;
+    View row;
 
-    ViewHolder (View row, int labId, int imgId){
+    ViewHolder (View row, int labId, int imgId, int descId, int accountId){
         this.lab = (TextView) row.findViewById(labId);
         this.img = (ImageView) row.findViewById(imgId);
+        this.desc = (TextView) row.findViewById(descId);
+        this.account = (TextView) row.findViewById(accountId);
+        this.row = row;
     }
 
     public TextView getLab (){
@@ -24,6 +30,12 @@ public class ViewHolder {
     public ImageView getImg (){
         return this.img;
     }
+    public TextView getDesc() { return this.desc; }
+    public TextView getAccount() { return this.account; }
 
-    
+    public View getRow() {
+        return row;
+    }
+
+
 }
