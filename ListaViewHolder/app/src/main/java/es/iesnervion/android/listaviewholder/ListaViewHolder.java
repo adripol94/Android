@@ -40,7 +40,6 @@ public class ListaViewHolder extends ListActivity {
     
     public View getView(int position, View convertView,
                         ViewGroup parent) {
-      
       View row = convertView;
       ViewHolder holder;
       
