@@ -2,7 +2,6 @@ package es.iesnervion.apol.ejercicio512;
 
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.view.View;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -10,7 +9,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
 
 /**
  * Created by apol on 9/11/16.

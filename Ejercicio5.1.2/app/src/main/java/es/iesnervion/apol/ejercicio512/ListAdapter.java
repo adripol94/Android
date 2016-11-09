@@ -1,14 +1,11 @@
 package es.iesnervion.apol.ejercicio512;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-import org.json.JSONException;
 
 
 /**
@@ -41,7 +38,6 @@ public class ListAdapter<T> extends ArrayAdapter<T> {
     }
 
 
-    @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
@@ -65,5 +61,6 @@ public class ListAdapter<T> extends ArrayAdapter<T> {
         holder.getDesc().setText(((ListReady) obj[position]).getCity());
         return row;
         //@IMPORTANT Error en AbsListView Motodo getSelectView sale Nulo!
+        // El null pointer sale cuando quiere llamar a otro row y ya no tiene mas rows porque completó la lista.
     }
 }

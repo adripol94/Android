@@ -1,8 +1,7 @@
 package es.iesnervion.apol.ejercicio512;
 
 import android.app.ListActivity;
-import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -10,11 +9,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+
 
 public class MainActivity extends ListActivity {
+
+    private final int NUM_ETIQUETAS = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +30,10 @@ public class MainActivity extends ListActivity {
 
     private Team[] list() {
         HashMap<String, String> array = jsonRead();
-        Team[] teams = new Team[array.size()];
+        Team[] teams = new Team[array.size() / NUM_ETIQUETAS]; //CAUTION size / 3
         String nameImg;
 
-        for (int i = 0; i < array.size() / 3; i++) {
+        for (int i = 0; i < (array.size() / NUM_ETIQUETAS); i++) {
             teams[i] = new Team(R.drawable.not_found, array.get("name" + i), array.get("city" + i));
         }
 
