@@ -14,7 +14,7 @@ import java.util.HashMap;
 
 public class MainActivity extends ListActivity {
 
-    private final int NUM_ETIQUETAS = 3;
+    private final int NUM_ETIQUETAS = 3; //IMPORTANT
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
