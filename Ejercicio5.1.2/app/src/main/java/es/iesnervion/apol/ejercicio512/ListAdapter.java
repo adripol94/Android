@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import org.json.JSONException;
 
 
 /**
@@ -55,10 +58,12 @@ public class ListAdapter<T> extends ArrayAdapter<T> {
             holder = (ViewHolder) row.getTag();
         }
 
+        int listView = ((ListReady) obj[position]).getImg();
         // Poner los atributos del holder en el layout
-        holder.getImgTeam().setImageResource(((ListReady) obj[position]).getImg());
+        holder.getImgTeam().setImageResource(listView);
         holder.getTitle().setText(((ListReady) obj[position]).getName());
         holder.getDesc().setText(((ListReady) obj[position]).getCity());
         return row;
+        //@IMPORTANT Error en AbsListView Motodo getSelectView sale Nulo!
     }
 }

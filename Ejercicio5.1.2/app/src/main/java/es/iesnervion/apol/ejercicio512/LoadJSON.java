@@ -1,13 +1,16 @@
 package es.iesnervion.apol.ejercicio512;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.view.View;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 
 /**
  * Created by apol on 9/11/16.
@@ -16,21 +19,24 @@ import java.io.InputStream;
 public class LoadJSON {
     private JSONObject obj;
     private Context c;
+    private String name;
 
-    public LoadJSON(Context c) {
+    public LoadJSON(Context c, String nameJSON) {
         obj = null;
         this.c = c;
+        this.name = nameJSON;
         getJsonObj();
 
     }
 
-    private String loadJSONfromAsset(Context c) {
+    private String loadJSONfromAsset() {
         InputStream inputStream;
         int size;
         String json = null;
 
         try {
-            inputStream = c.getAssets().open("nba.json");
+            AssetManager manager = c.getAssets();
+            inputStream = manager.open(name);
             size = inputStream.available();
             byte[] buffer = new byte[size];
 
@@ -45,7 +51,8 @@ public class LoadJSON {
 
     private void getJsonObj() {
         try {
-            obj = new JSONObject(loadJSONfromAsset(c));
+
+            obj = new JSONObject(loadJSONfromAsset());
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -57,5 +64,19 @@ public class LoadJSON {
         return  object;
     }
 
+    /**
+     * [CAUTION: Can return a null]. Devuelte un objeto JSONArray
+     * @param arrayName
+     * @return
+     */
+    public JSONArray getArray(String arrayName) {
+        JSONArray array = null;
+        try {
+            array = obj.getJSONArray(arrayName);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return array;
+    }
 
 }
