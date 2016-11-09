@@ -3,6 +3,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# Local configuration
+local.properties
+
 # Package Files #
 *.jar
 *.war
