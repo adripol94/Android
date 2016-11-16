@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:2:1-20:12
+ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:2:1-21:12
 	package
 		ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/
 		INJECTED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml
 		INJECTED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:5:5-18:19
+ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:5:5-19:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:25.0.0] /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:25:5-20
@@ -48,6 +48,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
 		ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:15:27-74
+activity#es.iesnervion.apol.ejercicio512.TeamDescription
+ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:18:9-62
+	android:name
+		ADDED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml:18:19-50
 uses-sdk
 INJECTED from /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.0.0] /home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78

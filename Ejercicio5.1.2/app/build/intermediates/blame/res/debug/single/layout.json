@@ -40,6 +40,10 @@
         "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_menu_layout.xml"
     },
     {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/layout/activity_team_description.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/layout/activity_team_description.xml"
+    },
+    {
         "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
         "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_mode_close_item_material.xml"
     },
