@@ -3,6 +3,7 @@ package es.iesnervion.apol.ejercicio512;
 import android.app.ListActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -26,15 +27,20 @@ public class MainActivity extends ListActivity {
         } catch (ClassCastException e) {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
+
+
     }
 
     private Team[] list() {
         HashMap<String, String> array = jsonRead();
         Team[] teams = new Team[array.size() / NUM_ETIQUETAS]; //CAUTION size / 3
         String nameImg;
+        int idResource;
+
 
         for (int i = 0; i < (array.size() / NUM_ETIQUETAS); i++) {
-            teams[i] = new Team(R.drawable.not_found, array.get("name" + i), array.get("city" + i));
+            idResource = getResources().getIdentifier(array.get("img" + i), "drawable", getPackageName());
+            teams[i] = new Team(idResource, array.get("name" + i), array.get("city" + i));
         }
 
         return teams;
@@ -52,13 +58,13 @@ public class MainActivity extends ListActivity {
                 objJSON = array.getJSONObject(i);
                 arrayHas.put("name" + i, objJSON.getString("full_name"));
                 arrayHas.put("city" + i, objJSON.getString("city"));
-                arrayHas.put("img" + i, objJSON.getString("abbreviation"));
+                arrayHas.put("img" + i, objJSON.getString("abbreviation").toLowerCase());
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
         return arrayHas;
     }
-
 
 }

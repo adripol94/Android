@@ -1,158 +1,278 @@
 [
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_clear_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/det.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/det.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_thumb_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/gs.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/gs.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_go_search_api_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_text_cursor_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/was.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/was.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_vector_test.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_radio_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/ind.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/ind.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_search_api_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/mil.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/mil.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/mem.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/mem.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_icon_background.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_colored_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/chi.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/chi.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_ab_back_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/ny.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/ny.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_icon_background.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/sac.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/sac.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/lac.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/lac.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/den.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/den.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_tab_indicator_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_light.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/bos.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/bos.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_dialog_material_background.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_dark.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_check_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/orl.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/orl.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_edit_text_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/atl.jpg",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/atl.jpg"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg_low.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/no.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/no.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_switch_thumb_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/mia.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/mia.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/not_found.png",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/src/main/res/drawable/not_found.png"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_tile_bg.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_top_material.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
-        "source": "/Volumes/Developer/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg_low.xml"
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/min.jpg",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/min.jpg"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/dal.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/dal.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/okc.gif",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/okc.gif"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/cha.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/cha.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/lal.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/lal.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/uta.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/uta.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/pho.gif",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/pho.gif"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/not_found.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/not_found.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/por.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/por.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/phi.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/phi.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/hou.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/hou.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/sa.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/sa.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/tor.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/tor.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/bkn.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/bkn.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/cle.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/src/main/res/drawable/cle.png"
+    },
+    {
+        "merged": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/home/apol/AndroidStudioProjects/Android/Ejercicio5.1.2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     }
 ]
