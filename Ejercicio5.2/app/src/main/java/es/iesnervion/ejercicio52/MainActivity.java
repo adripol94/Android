@@ -10,17 +10,11 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
 
 
-public class MainActivity extends ListActivity{
-
-    private final int NUM_ETIQUETAS = 4; //IMPORTANT
+public class MainActivity extends ListActivity {
     private Team[] teams;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,55 +22,39 @@ public class MainActivity extends ListActivity{
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(R.string.app_name);
-        // Si no es por aquí no lo cambia
+        // Cambiar el color de la letra del toolbar por aquí, de otra forma no se llega a cambiar!
         toolbar.setTitleTextColor(getResources().getColor(R.color.colorAccent));
 
-        try {
-            makeList();
-            setListAdapter(new ListAdapter<Team>(this, R.layout.row, R.id.tittle, teams));
-        } catch (ClassCastException e) {
-            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
-        }
+        // Carga el JSON
+        teams = new LoadJSON(this, "nba.json").getListArray("Teams");
+
+        // Comprobación del tipo de pantalla en la que está, para ello llamamos a el fragment movil
+        // (el .xml que deberia de salir en caso de que sea un movil y si no esta nulo significa
+        // que es un movil, si de lo contrario sale una table se iniciará el otro .xml de sw620dp
+
+        if (findViewById(R.id.fragment_movil) != null) {
 
 
-    }
+            // Comprobamos si viene de un estado onStoped osea que sea la primera vez que se
+            // ejecuta o no
 
-    /**
-     * Make a list reding the json and parsing it to array of teams.
-     */
-    private void makeList() {
-        HashMap<String, String> array = jsonRead();
-        teams = new Team[array.size() / NUM_ETIQUETAS]; //CAUTION size / 3
-        int idResource;
+            if (savedInstanceState != null)
+                return;
 
+            // Creamos una instancia del fragment lista y lo añadimos en la actividad destinada
+            // para el movil.
+            //TODO Crear instancia y instanciarlo
 
-        for (int i = 0; i < (array.size() / NUM_ETIQUETAS); i++) {
-            idResource = getResources().getIdentifier(array.get("img" + i), "drawable", getPackageName());
-            teams[i] = new Team(idResource, array.get("name" + i), array.get("city" + i), array.get("first" + i));
-        }
-    }
-
-    public HashMap jsonRead() {
-        JSONObject objJSON;
-        LoadJSON json = new LoadJSON(this, "nba.json");
-        JSONArray array = json.getArray("Teams");
-        HashMap<String, String> arrayHas = new HashMap<String, String>();
-
-        try {
-
-            for (int i = 0; i < array.length(); i++) {
-                objJSON = array.getJSONObject(i);
-                arrayHas.put("name" + i, objJSON.getString("full_name"));
-                arrayHas.put("city" + i, objJSON.getString("city"));
-                arrayHas.put("img" + i, objJSON.getString("abbreviation").toLowerCase());
-                arrayHas.put("first" + i, objJSON.getString("last_name"));
+            try {
+                ListTeamsFragment list = new ListTeamsFragment().newInstance(teams);
+            } catch (ClassCastException e) {
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
             }
 
-        } catch (JSONException e) {
-            e.printStackTrace();
         }
-        return arrayHas;
+
     }
+
 
     /**
      * This method will be called when an item in the list is selected.
