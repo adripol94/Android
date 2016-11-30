@@ -14,9 +14,9 @@ public class Team implements ListReady, Parcelable {
     private String web;
 
     public Team() {
-        img = R.drawable.not_found;
-        name = "Default";
-        city = "Default";
+        img = R.drawable.nba_logo;
+        name = "NBA Teams";
+        city = "World";
         web = "http://www.google.com";
     }
 

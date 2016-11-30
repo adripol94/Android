@@ -60,7 +60,5 @@ public class ListAdapter<T> extends ArrayAdapter<T> {
         holder.getTitle().setText(((ListReady) obj[position]).getName());
         holder.getDesc().setText(((ListReady) obj[position]).getCity());
         return row;
-        //@IMPORTANT Error en AbsListView Motodo getSelectView sale Nulo!
-        // El null pointer sale cuando quiere llamar a otro row y ya no tiene mas rows porque completó la lista.
     }
 }
