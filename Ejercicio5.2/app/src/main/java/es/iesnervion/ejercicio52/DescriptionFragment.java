@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * TODO Terminar!
  * Created by adripol94 on 11/23/16.
  */
 
@@ -68,6 +67,8 @@ public class DescriptionFragment extends Fragment {
             updateDescriptionView(args.getParcelable(ARG_TEAM));
         } else if (mTeamActual != null) {
             updateDescriptionView(mTeamActual);
+        } else {
+            updateDescriptionView();
         }
     }
 
@@ -98,24 +99,45 @@ public class DescriptionFragment extends Fragment {
         outState.putParcelable(ARG_TEAM, mTeamActual);
     }
 
-    private void updateDescriptionView(Parcelable team) {
-        Team t = (Team) team;
+    public void updateDescriptionView() {
+        mTeamActual = new Team();
 
         ImageView img = (ImageView) getActivity().findViewById(R.id.imgCabecera);
         TextView title = (TextView) getActivity().findViewById(R.id.titleTeam);
         TextView desc = (TextView) getActivity().findViewById(R.id.descriptionTeam);
         TextView link = (TextView) getActivity().findViewById(R.id.linkTeam);
 
-        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar_description);
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar_main);
 
-        img.setImageResource(t.getImg());
-        title.setText(t.getName());
-        desc.setText(t.getCity());
+        img.setImageResource(mTeamActual.getImg());
+        title.setText(mTeamActual.getName());
+        desc.setText(mTeamActual.getCity());
+
+        toolbar.setTitle(mTeamActual.getName().toString()); //Añade al toolbar un nombre especifico(Nombre del equipo)
+        link.setText(mTeamActual.getWeb());
+        desc.setText(mTeamActual.getCity());
+
+        Linkify.addLinks(link, Linkify.WEB_URLS); //Pone formato de nombre a url
+    }
+
+    public void updateDescriptionView(Parcelable team) {
+        mTeamActual = (Team) team;
 
 
-        toolbar.setTitle(t.getName().toString()); //Añade al toolbar un nombre especifico(Nombre del equipo)
-        link.setText(t.getWeb());
-        desc.setText(t.getCity());
+        ImageView img = (ImageView) getActivity().findViewById(R.id.imgCabecera);
+        TextView title = (TextView) getActivity().findViewById(R.id.titleTeam);
+        TextView desc = (TextView) getActivity().findViewById(R.id.descriptionTeam);
+        TextView link = (TextView) getActivity().findViewById(R.id.linkTeam);
+
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar_main);
+
+        img.setImageResource(mTeamActual.getImg());
+        title.setText(mTeamActual.getName());
+        desc.setText(mTeamActual.getCity());
+
+        toolbar.setTitle(mTeamActual.getName().toString()); //Añade al toolbar un nombre especifico(Nombre del equipo)
+        link.setText(mTeamActual.getWeb());
+        desc.setText(mTeamActual.getCity());
 
         Linkify.addLinks(link, Linkify.WEB_URLS); //Pone formato de nombre a url
     }

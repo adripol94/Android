@@ -2,7 +2,6 @@ package es.iesnervion.ejercicio52;
 
 
 /**
- * //TODO Terminar la clase
  * Created by adripol94 on 11/23/16.
  */
 
@@ -23,15 +22,15 @@ import android.widget.ListView;
 public class ListTeamsFragment extends ListFragment {
     private Team[] t;
 
-    private OnHeadSelectedListener mCallBack;
+    private OnHeadTeamSelected mCallBack;
 
     /**
      * Interfaz diseñada para implementar que la clase escuche cuando se le clickea a una opc de la lista
      * Created by adripol94 on 11/23/16.
      */
 
-    public interface OnHeadSelectedListener {
-        public void onArticleSelected(int position);
+    public interface OnHeadTeamSelected {
+        public void onTeamSelected(Team team);
     }
 
 
@@ -45,7 +44,7 @@ public class ListTeamsFragment extends ListFragment {
         Bundle args = new Bundle();
         
         ListTeamsFragment fragment = new ListTeamsFragment();
-        args.putParcelableArray("teams", t);
+        args.putParcelableArray(DescriptionFragment.ARG_TEAM, t);
         fragment.setArguments(args);
         return fragment;
     }
@@ -78,13 +77,13 @@ public class ListTeamsFragment extends ListFragment {
         // Recoger el valor por el bundle que se le introdujo desde newInstance o en caso contrario
         // crear un LoadJSON y leer el json y recoger el Array
         if (getArguments() != null) {
-            t = (Team[]) getArguments().getParcelableArray("teams");
+            t = (Team[]) getArguments().getParcelableArray(DescriptionFragment.ARG_TEAM);
         } else {
-            t = new LoadJSON(getContext(), "nba.json").getListArray("teams");
+            t = new LoadJSON(getContext(), "nba.json").getListArray("Teams");
         }
 
-        // Crear la lista
-        setListAdapter(new ListAdapter<Team>(getActivity(), R.layout.row, R.id.tittle, t));
+        // Crear la lista. Esto se suele poner con <Team> pero Android Studio me sugiere <>
+        setListAdapter(new ListAdapter<>(getActivity(), R.layout.row, R.id.tittle, t));
     }
 
     /**
@@ -118,7 +117,7 @@ public class ListTeamsFragment extends ListFragment {
 
         // Castear el context, de no sér así no saltará la excepcion
         try {
-            mCallBack = (OnHeadSelectedListener) context;
+            mCallBack = (OnHeadTeamSelected) context;
         } catch (ClassCastException e) {
             throw new ClassCastException("No implementado OnHeadSelectedListener :("
                     + e.getMessage() + ")");
@@ -140,9 +139,8 @@ public class ListTeamsFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
 
-        //TODO Terminar!!
         //Introducimos la posicion en la interfaz
-        mCallBack.onArticleSelected(position);
+        mCallBack.onTeamSelected(t[position]);
 
         //Indicamos al ListView que posicion de la lista tiene que seleccionar.
         // Indicaremos con true que ponga como seleccionado la posicion pasada por parametro

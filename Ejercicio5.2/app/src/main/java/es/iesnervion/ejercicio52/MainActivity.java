@@ -1,20 +1,16 @@
 package es.iesnervion.ejercicio52;
 
-import android.app.ListActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.ListView;
 import android.widget.Toast;
 
 
 //ATC: FragmentActivity extendida!!!!!!!!!!!!!!!!!
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements ListTeamsFragment.OnHeadTeamSelected {
 
 
     @Override
@@ -61,8 +57,30 @@ public class MainActivity extends FragmentActivity {
     }
 
     public void onTeamSelected(Team team) {
-        //TODO Terminar!!! : Depende de DescriptionFragment
+        DescriptionFragment descriptionFragment = (DescriptionFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.fragment_descriptions);
 
+        if (descriptionFragment != null) {
+
+            descriptionFragment.updateDescriptionView(team);
+        } else {
+            DescriptionFragment newDescriptionFragment = new DescriptionFragment();
+
+            Bundle args = new Bundle();
+            args.putParcelable(DescriptionFragment.ARG_TEAM, team);
+
+            newDescriptionFragment.setArguments(args);
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+            transaction.replace(R.id.fragment_movil, newDescriptionFragment);
+
+            //Añade a la pila el fragment
+            transaction.addToBackStack(null);
+
+            transaction.commit();
+        }
 
     }
+
+
 }
