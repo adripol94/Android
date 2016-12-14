@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52;
+package es.iesnervion.ejercicio52.Adapters;
 
 import android.view.View;
 import android.widget.ImageView;

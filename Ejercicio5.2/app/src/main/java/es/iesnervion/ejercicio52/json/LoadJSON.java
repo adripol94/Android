@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52;
+package es.iesnervion.ejercicio52.json;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -10,6 +10,8 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
+
+import es.iesnervion.ejercicio52.Models.Team;
 
 
 /**

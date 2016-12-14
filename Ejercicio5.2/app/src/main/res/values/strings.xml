@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">NBA Teams</string>
+    <string name="app_name">NBA</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_team_description">TeamDescriptionActivity</string>
+    <string name="title_activity_main">Jugadores</string>
+    <string name="title_activity_main_teams">Equipos</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

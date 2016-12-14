@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52;
+package es.iesnervion.ejercicio52.Models;
 
 /**
  * Created by adripol94 on 11/8/16.
