@@ -11,6 +11,12 @@ import android.widget.Toast;
 import es.iesnervion.ejercicio52.R;
 import es.iesnervion.ejercicio52.Models.Team;
 
+/**
+ * Esta clase pertence a {@link Team}
+ *
+ * Created by adriol94 on 12/14/16.
+ */
+
 public class TeamDescription extends AppCompatActivity {
     private Team team;
 
@@ -40,31 +46,5 @@ public class TeamDescription extends AppCompatActivity {
         desc.setText(team.getCity());
 
         Linkify.addLinks(link, Linkify.WEB_URLS); //Pone formato de nombre a url
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

@@ -3,6 +3,7 @@ package es.iesnervion.ejercicio52.Layouts;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -17,11 +18,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.TextView;
-
+import es.iesnervion.ejercicio52.Fragments.DescriptionFragment;
+import es.iesnervion.ejercicio52.Fragments.ListPlayers;
+import es.iesnervion.ejercicio52.Fragments.ListTeams;
+import es.iesnervion.ejercicio52.Models.Player;
+import es.iesnervion.ejercicio52.Models.Team;
 import es.iesnervion.ejercicio52.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadTeamSelected, ListPlayers.OnHeadPlayerSelected{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -32,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
+
+    /**
+     * El {@link FloatingActionButton} será usado segun el fragment que vaomos a usar
+     * si es Equipos estara {@code View.INVISIBLE} si es Jugadores se habilitara con
+     * {@code View.VISIBLE}
+     */
+    private FloatingActionButton fab;
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -57,8 +68,31 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                if (tab.getPosition() == 0)
+                    fab.setVisibility(View.INVISIBLE);
+                else
+                    fab.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setVisibility(View.INVISIBLE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
 
     }
 
@@ -92,6 +127,16 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onPlayerSelected(Player player) {
+
+    }
+
+    @Override
+    public void onTeamSelected(Team team) {
+
+    }
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -105,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
         public PlaceholderFragment() {
         }
 
+
         /**
          * Returns a new instance of this fragment for the given section
          * number.
@@ -117,12 +163,45 @@ public class MainActivity extends AppCompatActivity {
             return fragment;
         }
 
+        /**
+         * Infla los frragments necesarios dependiendo de la posicion en la que este
+         * por medio de {@value ARG_SECTION_NUMBER}.
+         *
+         * @param inflater
+         * @param container
+         * @param savedInstanceState
+         * @return
+         */
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            View rootView = null;
+
+
+            if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
+                rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+                ListTeams list = new ListTeams();
+                list.setArguments(getActivity().getIntent().getExtras());
+
+                // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
+                // gracias a esto pondremos todos las propiedades preparada de ese
+                // fragment en el fragment
+                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_movil, list)
+                        .commit();
+
+            } else {
+                rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+                ListPlayers list = new ListPlayers();
+                list.setArguments(getActivity().getIntent().getExtras());
+
+                // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
+                // gracias a esto pondremos todos las propiedades preparada de ese
+                // fragment en el fragment
+                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_movil, list)
+                        .commit();
+            }
             return rootView;
         }
     }

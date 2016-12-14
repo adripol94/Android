@@ -10,7 +10,7 @@ import es.iesnervion.ejercicio52.R;
  * Created by apol on 8/11/16.
  */
 
-public class Team implements ListReady, Parcelable {
+public class Team implements Parcelable {
     private int img;
     private String name;
     private String city;
