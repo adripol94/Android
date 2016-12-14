@@ -1,5 +1,6 @@
 package es.iesnervion.ejercicio52.Models;
 
+import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -15,6 +16,11 @@ public class Team implements ListReady, Parcelable {
     private String city;
     private String web;
 
+    /**
+     * Img default, ya que que no podemos acceder a las carpetas Equipos tendremos que ir por
+     * getResources().getIndentifiquer y pensamos que e smas facil hacerlo fuera de la clase.
+     *
+     */
     public Team() {
         img = R.drawable.nba_logo;
         name = "NBA Teams";
@@ -82,7 +88,7 @@ public class Team implements ListReady, Parcelable {
         dest.writeString(this.web);
     }
 
-    protected Team(Parcel in) {
+    public Team(Parcel in) {
         this.img = in.readInt();
         this.name = in.readString();
         this.city = in.readString();
