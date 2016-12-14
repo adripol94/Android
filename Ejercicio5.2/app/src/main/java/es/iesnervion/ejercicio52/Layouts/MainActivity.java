@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52;
+package es.iesnervion.ejercicio52.Layouts;
 
 import android.os.Bundle;
 
@@ -6,6 +6,11 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
+
+import es.iesnervion.ejercicio52.Fragments.DescriptionFragment;
+import es.iesnervion.ejercicio52.Fragments.ListTeamsFragment;
+import es.iesnervion.ejercicio52.R;
+import es.iesnervion.ejercicio52.Models.Team;
 
 
 //ATC: FragmentActivity extendida!!!!!!!!!!!!!!!!!

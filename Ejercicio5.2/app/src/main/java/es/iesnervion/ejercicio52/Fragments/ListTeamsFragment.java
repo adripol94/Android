@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52;
+package es.iesnervion.ejercicio52.Fragments;
 
 
 /**
@@ -15,6 +15,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
+import es.iesnervion.ejercicio52.Adapters.ListAdapter;
+import es.iesnervion.ejercicio52.json.LoadJSON;
+import es.iesnervion.ejercicio52.R;
+import es.iesnervion.ejercicio52.Models.Team;
 
 
 // Ya que se tratat de una lista tenemos que añadir la libreria de ListFragment

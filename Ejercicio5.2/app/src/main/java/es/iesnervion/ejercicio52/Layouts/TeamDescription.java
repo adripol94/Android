@@ -1,15 +1,15 @@
-package es.iesnervion.ejercicio52;
+package es.iesnervion.ejercicio52.Layouts;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.regex.Pattern;
+import es.iesnervion.ejercicio52.R;
+import es.iesnervion.ejercicio52.Models.Team;
 
 public class TeamDescription extends AppCompatActivity {
     private Team team;

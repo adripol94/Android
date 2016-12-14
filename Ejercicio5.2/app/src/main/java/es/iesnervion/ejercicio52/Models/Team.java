@@ -1,7 +1,9 @@
-package es.iesnervion.ejercicio52;
+package es.iesnervion.ejercicio52.Models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import es.iesnervion.ejercicio52.R;
 
 /**
  * Created by apol on 8/11/16.

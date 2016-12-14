@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52;
+package es.iesnervion.ejercicio52.Fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -13,12 +13,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import es.iesnervion.ejercicio52.R;
+import es.iesnervion.ejercicio52.Models.Team;
+
 /**
  * Created by adripol94 on 11/23/16.
  */
 
 public class DescriptionFragment extends Fragment {
-    final static String ARG_TEAM = "team";
+    public final static String ARG_TEAM = "team";
     private Team mTeamActual = null;
 
     /**
