@@ -8,15 +8,15 @@ iesnervion.es
 For JSON DATA: https://erikberg.com/api
 
 
-# Ramas.
+## Ramas.
 
-## master
+### master.
 Rama Master
 
-## addFragment.
+### addFragment.
 
 Rama preparada con los fragment para movíl y tablet. *Posiblemente no acabe enlazandose a master*.
 
-## v3 :new:.
+### v3 :new:.
 
 Se añaden los *Tabs* en el menu principal segun el estandar de diseño https://material.google.com/components/tabs.html#tabs-usage.
