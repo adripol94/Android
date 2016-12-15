@@ -14,26 +14,19 @@ import java.util.Vector;
 public class PlayerManager implements Parcelable {
     public static final String PLAYERMANAGER_NAME = "playerManager";
     private static final int MAXIMO = 10;
-    private Vector<Player> p;
+    private ArrayList<Player> p;
 
     public PlayerManager() {
-        p = new Vector<>(MAXIMO);
+        p = new ArrayList<>(MAXIMO);
+        p.add(new Player());
     }
 
-    //TODO Se queda pillada la lista problemas con el Casteo de Vector a Player[]!
-    public Player[] getPlayers() {
-        Iterator<Player> it = p.iterator();
-        ArrayList<Player> players = new ArrayList<>();
-
-        while (it.hasNext()) {
-            players.add(it.next());
-        }
-
-        return (Player[]) players.toArray();
+    public ArrayList<Player> getPlayers() {
+        return p;
     }
 
     public Player getPlayer(int i) {
-        return p.elementAt(i);
+        return p.get(i);
     }
 
 
@@ -41,7 +34,7 @@ public class PlayerManager implements Parcelable {
         if (p.size() >= MAXIMO)
             throw new PlayerException("Superado el maximo de jugadores permitidos");
 
-        this.p.elementAt(p.size() + 1);
+        this.p.get(p.size() + 1);
     }
 
     public void removePlayer(int i) throws PlayerException {
@@ -59,12 +52,11 @@ public class PlayerManager implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeList(this.p);
+        dest.writeTypedList(this.p);
     }
 
     protected PlayerManager(Parcel in) {
-        this.p = new Vector<>();
-        in.readList(this.p, Player.class.getClassLoader());
+        this.p = in.createTypedArrayList(Player.CREATOR);
     }
 
     public static final Creator<PlayerManager> CREATOR = new Creator<PlayerManager>() {

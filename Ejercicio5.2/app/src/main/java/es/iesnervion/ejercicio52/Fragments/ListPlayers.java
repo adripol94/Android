@@ -55,8 +55,7 @@ public class ListPlayers extends ListFragment {
             manager = savedInstanceState.getParcelable(PlayerManager.PLAYERMANAGER_NAME);
         }
 
-        if (manager.getPlayers().length > 1)
-            setListAdapter(new ListAdapterPlayer(getContext(), R.layout.row_player_list, manager.getPlayers()));
+        setListAdapter(new ListAdapterPlayer(getContext(), R.layout.row_player_list, manager.getPlayers()));
     }
 
 

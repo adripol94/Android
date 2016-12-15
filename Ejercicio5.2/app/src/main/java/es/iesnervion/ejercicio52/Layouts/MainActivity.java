@@ -191,6 +191,8 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
                         .commit();
 
             } else {
+                //TODO Se infla en la lista de Equipos, necesita ser inflada en Jugadores
+
                 rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
                 ListPlayers list = new ListPlayers();
@@ -199,7 +201,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
                 // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
                 // gracias a esto pondremos todos las propiedades preparada de ese
                 // fragment en el fragment
-                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_movil, list)
+                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_list, list)
                         .commit();
             }
             return rootView;
@@ -225,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 2 total pages.
             return 2;
         }
 
