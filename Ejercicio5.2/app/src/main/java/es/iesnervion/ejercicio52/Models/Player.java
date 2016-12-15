@@ -22,7 +22,7 @@ public class Player implements Parcelable{
     private int altura;
 
     public Player() {
-        this.img = R.drawable.not_found;
+        this.img = R.drawable.nba_logo;
         this.name = "Default";
         this.altura = 0;
         this.peso = 0;

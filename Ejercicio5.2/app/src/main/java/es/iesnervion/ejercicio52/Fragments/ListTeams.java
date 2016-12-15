@@ -82,7 +82,7 @@ public class ListTeams extends ListFragment {
         }
 
         // Crear la lista.
-        setListAdapter(new ListAdapterTeam(getActivity(), R.layout.row, t));
+        setListAdapter(new ListAdapterTeam(getContext(), R.layout.row, t));
     }
 
     /**

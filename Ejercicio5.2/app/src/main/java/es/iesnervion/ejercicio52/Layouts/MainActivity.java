@@ -3,6 +3,7 @@ package es.iesnervion.ejercicio52.Layouts;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -17,6 +18,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import es.iesnervion.ejercicio52.Fragments.DescriptionFragment;
 import es.iesnervion.ejercicio52.Fragments.ListPlayers;
 import es.iesnervion.ejercicio52.Fragments.ListTeams;
 import es.iesnervion.ejercicio52.Models.Player;
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //Edited Cambiar a false para eliminar el boton atras
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -132,6 +134,29 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
 
     @Override
     public void onTeamSelected(Team team) {
+        DescriptionFragment descriptionFragment = (DescriptionFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.fragment_descriptions);
+
+        if (descriptionFragment != null) {
+
+            descriptionFragment.updateDescriptionView(team);
+        } else {
+            DescriptionFragment newDescriptionFragment = new DescriptionFragment();
+
+            Bundle args = new Bundle();
+            args.putParcelable(DescriptionFragment.ARG_TEAM, team);
+
+            newDescriptionFragment.setArguments(args);
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+            transaction.replace(R.id.fragment_descriptions, newDescriptionFragment);
+
+            //Añade a la pila el fragment
+            transaction.addToBackStack(null);
+
+            transaction.commit();
+        }
+
 
     }
 
@@ -179,14 +204,32 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
             if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
                 rootView = inflater.inflate(R.layout.fragment_teams, container, false);
 
-                ListTeams list = new ListTeams();
-                list.setArguments(getActivity().getIntent().getExtras());
+                // Comprobación del tipo de pantalla en la que está, para ello llamamos a el fragment team
+                // (el .xml que deberia de salir en caso de que sea un movil y si no esta nulo significa
+                // que es un movil, si de lo contrario sale una table se iniciará el otro .xml de sw620dp
 
-                // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
-                // gracias a esto pondremos todos las propiedades preparada de ese
-                // fragment en el fragment
-                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_team, list)
-                        .commit();
+                if (getActivity().findViewById(R.id.fragment_team) != null) {
+
+
+                    // Comprobamos si viene de un estado onStoped osea que sea la primera vez que se
+                    // ejecuta o no
+
+                    if (savedInstanceState != null)
+                        return rootView;
+
+                    // Creamos una instancia del fragment lista y lo añadimos en la actividad destinada
+                    // para el movil.
+
+
+                    ListTeams list = new ListTeams();
+                    list.setArguments(getActivity().getIntent().getExtras());
+
+                    // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
+                    // gracias a esto pondremos todos las propiedades preparada de ese
+                    // fragment en el fragment
+                    getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_team, list)
+                            .commit();
+                }
 
             } else {
 

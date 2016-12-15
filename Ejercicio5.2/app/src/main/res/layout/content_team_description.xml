@@ -16,7 +16,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
         android:layout_alignParentTop="true"
         android:id="@+id/imgCabecera"
         android:layout_alignParentStart="true"
@@ -41,7 +40,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linkTeam"
-        android:background="#555"
         android:layout_below="@id/descriptionTeam"/>
 
 </RelativeLayout>

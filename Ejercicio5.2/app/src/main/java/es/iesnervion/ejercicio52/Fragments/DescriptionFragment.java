@@ -17,8 +17,7 @@ import es.iesnervion.ejercicio52.Models.Team;
 import es.iesnervion.ejercicio52.R;
 
 /**
- * Este fragment pertenece a {@link es.iesnervion.ejercicio52.Layouts.TeamDescription} &
- * {@link Team}
+ * Este fragment pertenece a {@link Team}
  *
  * Created by adriol94 on 12/14/16.
  */
