@@ -18,7 +18,6 @@ public class PlayerManager implements Parcelable {
 
     public PlayerManager() {
         p = new ArrayList<>(MAXIMO);
-        p.add(new Player());
     }
 
     public ArrayList<Player> getPlayers() {
@@ -38,8 +37,8 @@ public class PlayerManager implements Parcelable {
     }
 
     public void removePlayer(int i) throws PlayerException {
-        if (p.size() <= 0)
-            throw new PlayerException("No tiene ningun jugador");
+        if (p.size() < i)
+            throw new PlayerException("No se puede borrar dicho jugador");
 
         this.p.remove(i);
     }

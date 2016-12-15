@@ -12,6 +12,7 @@ import android.widget.ListView;
 
 import es.iesnervion.ejercicio52.Adapters.ListAdapterPlayer;
 import es.iesnervion.ejercicio52.Models.Player;
+import es.iesnervion.ejercicio52.Models.PlayerException;
 import es.iesnervion.ejercicio52.Models.PlayerManager;
 import es.iesnervion.ejercicio52.R;
 
@@ -72,7 +73,7 @@ public class ListPlayers extends ListFragment {
         // tablet
         // De ser así indicaremos con CHOICE_MODE_SINGLE que se quedará seleccionada en la lista
         // la opcion seleccionada.
-        if (getFragmentManager().findFragmentById(R.id.fragment_descriptions) != null) {
+        if (getFragmentManager().findFragmentById(R.id.fragment_players) != null) {
             getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         }
 

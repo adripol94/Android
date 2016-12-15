@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter;
 import java.util.ArrayList;
 
 import es.iesnervion.ejercicio52.Models.Player;
-import es.iesnervion.ejercicio52.Models.Team;
 import es.iesnervion.ejercicio52.R;
 
 /**
@@ -49,6 +48,7 @@ public class ListAdapterPlayer extends ArrayAdapter<Player> {
         vh.getName().setText(player.getName());
         vh.getAltura().setText(String.valueOf(player.getAltura()));
         vh.getPeso().setText(String.valueOf(player.getPeso()));
+
         return cell;
 
     }

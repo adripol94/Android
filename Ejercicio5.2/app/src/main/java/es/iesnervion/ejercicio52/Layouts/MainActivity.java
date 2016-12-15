@@ -3,7 +3,6 @@ package es.iesnervion.ejercicio52.Layouts;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -18,7 +17,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import es.iesnervion.ejercicio52.Fragments.DescriptionFragment;
 import es.iesnervion.ejercicio52.Fragments.ListPlayers;
 import es.iesnervion.ejercicio52.Fragments.ListTeams;
 import es.iesnervion.ejercicio52.Models.Player;
@@ -179,7 +177,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
 
 
             if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
-                rootView = inflater.inflate(R.layout.fragment_main, container, false);
+                rootView = inflater.inflate(R.layout.fragment_teams, container, false);
 
                 ListTeams list = new ListTeams();
                 list.setArguments(getActivity().getIntent().getExtras());
@@ -187,13 +185,12 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
                 // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
                 // gracias a esto pondremos todos las propiedades preparada de ese
                 // fragment en el fragment
-                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_movil, list)
+                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_team, list)
                         .commit();
 
             } else {
-                //TODO Se infla en la lista de Equipos, necesita ser inflada en Jugadores
 
-                rootView = inflater.inflate(R.layout.fragment_main, container, false);
+                rootView = inflater.inflate(R.layout.fragment_players, container, false);
 
                 ListPlayers list = new ListPlayers();
                 list.setArguments(getActivity().getIntent().getExtras());
@@ -201,7 +198,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
                 // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
                 // gracias a esto pondremos todos las propiedades preparada de ese
                 // fragment en el fragment
-                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_list, list)
+                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_players, list)
                         .commit();
             }
             return rootView;

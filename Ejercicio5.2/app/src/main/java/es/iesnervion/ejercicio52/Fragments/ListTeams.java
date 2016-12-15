@@ -98,7 +98,7 @@ public class ListTeams extends ListFragment {
         // tablet
         // De ser así indicaremos con CHOICE_MODE_SINGLE que se quedará seleccionada en la lista
         // la opcion seleccionada.
-        if (getFragmentManager().findFragmentById(R.id.fragment_descriptions) != null) {
+        if (getFragmentManager().findFragmentById(R.id.fragment_team) != null) {
             getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         }
 
