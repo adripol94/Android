@@ -8,22 +8,30 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Layouts.TeamDescription" />
-
+        <activity android:name=".View.Activity.TeamDescription" />
         <activity
-            android:name=".Layouts.MainActivity"
+            android:name=".View.Activity.MainActivity"
             android:label="@string/app_name"
-            android:parentActivityName=".Layouts.MainActivity"
+            android:parentActivityName=".View.Activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="es.iesnervion.ejercicio52.Layouts.MainActivity" />
+                android:value=".View.Activity.MainActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".View.Activity.AddPlayer"
+            android:label="@string/title_activity_add_player"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Activity.GalleryPlayers"
+            android:label="@string/title_activity_gallery_players"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

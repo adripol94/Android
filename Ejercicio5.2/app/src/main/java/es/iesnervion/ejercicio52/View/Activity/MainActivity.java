@@ -1,5 +1,6 @@
-package es.iesnervion.ejercicio52.Layouts;
+package es.iesnervion.ejercicio52.View.Activity;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,9 +19,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import es.iesnervion.ejercicio52.Fragments.DescriptionFragment;
-import es.iesnervion.ejercicio52.Fragments.ListPlayers;
-import es.iesnervion.ejercicio52.Fragments.ListTeams;
+import es.iesnervion.ejercicio52.View.Fragments.DescriptionFragment;
+import es.iesnervion.ejercicio52.View.Fragments.ListPlayers;
+import es.iesnervion.ejercicio52.View.Fragments.ListTeams;
 import es.iesnervion.ejercicio52.Models.Player;
 import es.iesnervion.ejercicio52.Models.Team;
 import es.iesnervion.ejercicio52.R;
@@ -96,8 +97,8 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent it = new Intent(MainActivity.this, AddPlayer.class);
+                startActivity(it);
             }
         });
 
@@ -208,7 +209,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
                 // (el .xml que deberia de salir en caso de que sea un movil y si no esta nulo significa
                 // que es un movil, si de lo contrario sale una table se iniciará el otro .xml de sw620dp
 
-                if (getActivity().findViewById(R.id.fragment_team) != null) {
+                if (rootView.findViewById(R.id.fragment_team_movil) != null) {
 
 
                     // Comprobamos si viene de un estado onStoped osea que sea la primera vez que se
@@ -227,7 +228,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
                     // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
                     // gracias a esto pondremos todos las propiedades preparada de ese
                     // fragment en el fragment
-                    getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_team, list)
+                    getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_team_movil, list)
                             .commit();
                 }
 

@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52.Fragments;
+package es.iesnervion.ejercicio52.View.Fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -53,7 +53,7 @@ public class DescriptionFragment extends Fragment {
         }
 
         // Inflamos la vista y la devolvemos
-        return inflater.inflate(R.layout.content_team_description, container, false);
+        return inflater.inflate(R.layout.fragment_team_description, container, false);
     }
 
     /**

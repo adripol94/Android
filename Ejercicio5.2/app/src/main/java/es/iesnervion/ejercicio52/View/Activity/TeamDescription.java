@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52.Layouts;
+package es.iesnervion.ejercicio52.View.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

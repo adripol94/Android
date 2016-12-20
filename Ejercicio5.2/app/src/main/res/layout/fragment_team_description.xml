@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="es.iesnervion.ejercicio52.Layouts.TeamDescription"
+    tools:context=".View.Activity.TeamDescription"
     tools:showIn="@layout/activity_team_description">
 
     <ImageView
@@ -29,6 +29,7 @@
         android:layout_marginTop="30dp"
         android:id="@+id/titleTeam"
         android:textSize="40dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,6 +37,7 @@
         android:layout_marginTop="10dp"
         android:id="@+id/descriptionTeam"
         android:layout_alignParentEnd="true" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

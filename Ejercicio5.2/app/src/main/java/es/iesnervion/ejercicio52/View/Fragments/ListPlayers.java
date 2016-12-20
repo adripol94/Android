@@ -1,4 +1,4 @@
-package es.iesnervion.ejercicio52.Fragments;
+package es.iesnervion.ejercicio52.View.Fragments;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,9 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import es.iesnervion.ejercicio52.Adapters.ListAdapterPlayer;
+import es.iesnervion.ejercicio52.View.Adapters.ListAdapterPlayer;
 import es.iesnervion.ejercicio52.Models.Player;
-import es.iesnervion.ejercicio52.Models.PlayerException;
 import es.iesnervion.ejercicio52.Models.PlayerManager;
 import es.iesnervion.ejercicio52.R;
 

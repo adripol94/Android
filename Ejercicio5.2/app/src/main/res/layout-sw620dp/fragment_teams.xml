@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="horizontal"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="es.iesnervion.ejercicio52.Layouts.MainActivity"
+    tools:context=".View.Activity.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <!-- Añadimos los fragments correspondientes -->
@@ -20,7 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:name="es.iesnervion.ejercicio52.Fragments.ListTeams"
+        android:name="es.iesnervion.ejercicio52.View.Fragments.ListTeams"
         android:id="@+id/fragment_team" />
 
     <!-- Fragments para la descripción de los equipos -->
@@ -29,6 +29,6 @@
         android:layout_height="match_parent"
         android:layout_weight="2"
         android:id="@+id/fragment_descriptions"
-        android:name="es.iesnervion.ejercicio52.Fragments.DescriptionFragment" />
+        android:name="es.iesnervion.ejercicio52.View.Fragments.DescriptionFragment" />
 
 </LinearLayout>

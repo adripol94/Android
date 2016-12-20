@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- Pagina 2 referente a Jugadores -->
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_players"
+    android:id="@+id/content_gallery_players"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -13,7 +10,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".View.Activity.MainActivity$PlaceholderFragment">
-    tools:showIn="@layout/activity_main">
+    tools:context="es.iesnervion.ejercicio52.View.Activity.GalleryPlayers"
+    tools:showIn="@layout/activity_gallery_players">
 
-</FrameLayout>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/galleryImg_gv"
+        android:numColumns="auto_fit"></GridView>
+
+</RelativeLayout>
