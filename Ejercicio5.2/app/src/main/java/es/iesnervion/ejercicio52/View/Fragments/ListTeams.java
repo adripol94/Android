@@ -81,7 +81,7 @@ public class ListTeams extends ListFragment {
         }
 
         // Crear la lista.
-        setListAdapter(new ListAdapterTeam(getContext(), R.layout.row, t));
+        setListAdapter(new ListAdapterTeam(getContext(), R.layout.content_teams_row, t));
     }
 
     /**
@@ -132,7 +132,7 @@ public class ListTeams extends ListFragment {
      * @param l        The ListView where the click happened
      * @param v        The view that was clicked within the ListView
      * @param position The position of the view in the list
-     * @param id       The row id of the item that was clicked
+     * @param id       The content_teams_row id of the item that was clicked
      */
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {

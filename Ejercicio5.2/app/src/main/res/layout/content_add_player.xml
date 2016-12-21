@@ -21,7 +21,7 @@
         android:layout_height="200dp"
         card_view:cardCornerRadius="4dp"
         card_view:cardElevation="15dp"
-        card_view:cardBackgroundColor="#555">
+        card_view:cardBackgroundColor="#FAFAFA">
 
         <ImageView
             android:layout_width="match_parent"

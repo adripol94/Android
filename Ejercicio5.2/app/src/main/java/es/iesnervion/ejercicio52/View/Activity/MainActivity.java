@@ -19,6 +19,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import es.iesnervion.ejercicio52.Models.PlayerException;
+import es.iesnervion.ejercicio52.Models.PlayerManager;
 import es.iesnervion.ejercicio52.View.Fragments.DescriptionFragment;
 import es.iesnervion.ejercicio52.View.Fragments.ListPlayers;
 import es.iesnervion.ejercicio52.View.Fragments.ListTeams;
@@ -50,10 +52,15 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
      */
     private ViewPager mViewPager;
 
+    /** Manejadora de {@link Player} */
+    private PlayerManager manager;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        manager = new PlayerManager();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -91,20 +98,40 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
             }
         });
 
-
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setVisibility(View.INVISIBLE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(MainActivity.this, AddPlayer.class);
-                startActivity(it);
+                startActivityForResult(it, AddPlayer.ADDPLAYER_REQUEST);
             }
         });
 
-
     }
 
+    /**
+     * Dispatch incoming result to the correct fragment.
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == AddPlayer.ADDPLAYER_REQUEST && resultCode == RESULT_OK) {
+            try {
+
+                Player p = (Player) data.getExtras().get(Player.PLAYER_KEY);
+                manager.addPlayer(p);
+
+            } catch (ClassCastException | PlayerException e) {
+                Snackbar.make(findViewById(R.id.main_content), e.getMessage(), Snackbar.LENGTH_LONG);
+            }
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -170,6 +197,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
+        private PlayerManager manager;
 
         public PlaceholderFragment() {
         }
@@ -223,6 +251,7 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
 
 
                     ListTeams list = new ListTeams();
+
                     list.setArguments(getActivity().getIntent().getExtras());
 
                     // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
@@ -236,8 +265,18 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
 
                 rootView = inflater.inflate(R.layout.fragment_players, container, false);
 
+
                 ListPlayers list = new ListPlayers();
-                list.setArguments(getActivity().getIntent().getExtras());
+
+                //TODO falla aqui...
+                Intent it = getActivity().getIntent();
+
+                if (manager != null) {
+                    it.putExtra(PlayerManager.PLAYERMANAGER_NAME_KEY, manager);
+                }
+
+                list.setArguments(it.getExtras());
+
 
                 // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
                 // gracias a esto pondremos todos las propiedades preparada de ese
@@ -246,6 +285,21 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
                         .commit();
             }
             return rootView;
+        }
+
+        /**
+         * Supply the construction arguments for this fragment.  This can only
+         * be called before the fragment has been attached to its activity; that
+         * is, you should call it immediately after constructing the fragment.  The
+         * arguments supplied here will be retained across fragment destroy and
+         * creation.
+         *
+         * @param args
+         */
+        @Override
+        public void setArguments(Bundle args) {
+            super.setArguments(args);
+            manager = args.getParcelable(PlayerManager.PLAYERMANAGER_NAME_KEY);
         }
     }
 

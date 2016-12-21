@@ -29,6 +29,25 @@ public class ListPlayers extends ListFragment {
     }
 
     /**
+     * Supply the construction arguments for this fragment.  This can only
+     * be called before the fragment has been attached to its activity; that
+     * is, you should call it immediately after constructing the fragment.  The
+     * arguments supplied here will be retained across fragment destroy and
+     * creation.
+     *
+     * @param args
+     */
+    @Override
+    public void setArguments(Bundle args) {
+        super.setArguments(args);
+
+
+        if (args != null && args.containsKey(PlayerManager.PLAYERMANAGER_NAME_KEY))
+            manager = args.getParcelable(PlayerManager.PLAYERMANAGER_NAME);
+
+    }
+
+    /**
      * Called to do initial creation of a fragment.  This is called after
      * {@link #onAttach(Activity)} and before
      * {@link #onCreateView(LayoutInflater, ViewGroup, Bundle)}.
@@ -49,13 +68,14 @@ public class ListPlayers extends ListFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (savedInstanceState == null) {
+        //TODO Falla aquí
+        if (savedInstanceState == null && manager == null) {
             manager = new PlayerManager();
         } else {
             manager = savedInstanceState.getParcelable(PlayerManager.PLAYERMANAGER_NAME);
         }
 
-        setListAdapter(new ListAdapterPlayer(getContext(), R.layout.row_player_list, manager.getPlayers()));
+        setListAdapter(new ListAdapterPlayer(getContext(), R.layout.content_players_row, manager.getPlayers()));
     }
 
     /**
@@ -134,7 +154,7 @@ public class ListPlayers extends ListFragment {
      * @param l        The ListView where the click happened
      * @param v        The view that was clicked within the ListView
      * @param position The position of the view in the list
-     * @param id       The row id of the item that was clicked
+     * @param id       The row_team_list id of the item that was clicked
      */
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {

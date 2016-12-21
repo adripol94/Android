@@ -42,7 +42,7 @@ public class ListAdapterTeam extends ArrayAdapter {
         // Inflar el layput y inciar el ViewHolderTeam
         if (row == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService( Context.LAYOUT_INFLATER_SERVICE );
-            row = inflater.inflate(R.layout.row, parent, false);
+            row = inflater.inflate(R.layout.content_teams_row, parent, false);
 
             holder = new ViewHolderTeam(row, R.id.image, R.id.tittle, R.id.desc);
             row.setTag(holder);

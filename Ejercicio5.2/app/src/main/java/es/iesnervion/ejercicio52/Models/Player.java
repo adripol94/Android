@@ -15,6 +15,7 @@ public class Player implements Parcelable{
     public static final String ALERO = "Alero";
     public static final String ESCOLTA = "Escolta";
     public static final String BASE = "Base";
+    public static final String PLAYER_KEY = "player";
 
     private int img;
     private String name;

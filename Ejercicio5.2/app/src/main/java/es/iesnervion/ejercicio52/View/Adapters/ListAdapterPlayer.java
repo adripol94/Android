@@ -35,7 +35,7 @@ public class ListAdapterPlayer extends ArrayAdapter<Player> {
 
         if (cell == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-            cell = inflater.inflate(R.layout.row_player_list, parent, false);
+            cell = inflater.inflate(R.layout.content_players_row, parent, false);
 
             vh = new ViewHolderPlayer(cell, R.id.imagePlayer, R.id.tittlePlayer, R.id.pesoPlayer,
                     R.id.alturaPlayer);

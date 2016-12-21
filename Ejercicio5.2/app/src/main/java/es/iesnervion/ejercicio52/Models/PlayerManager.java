@@ -13,6 +13,8 @@ import java.util.Vector;
 
 public class PlayerManager implements Parcelable {
     public static final String PLAYERMANAGER_NAME = "playerManager";
+    public static final String PLAYERMANAGER_NAME_KEY = "playerManagerKey";
+
     private static final int MAXIMO = 10;
     private ArrayList<Player> p;
 
@@ -33,7 +35,8 @@ public class PlayerManager implements Parcelable {
         if (p.size() >= MAXIMO)
             throw new PlayerException("Superado el maximo de jugadores permitidos");
 
-        this.p.get(p.size() + 1);
+        p.add(player);
+
     }
 
     public void removePlayer(int i) throws PlayerException {
