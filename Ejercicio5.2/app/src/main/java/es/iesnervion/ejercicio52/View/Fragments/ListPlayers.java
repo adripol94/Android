@@ -28,24 +28,6 @@ public class ListPlayers extends ListFragment {
         public void onPlayerSelected(Player player);
     }
 
-    /**
-     * Supply the construction arguments for this fragment.  This can only
-     * be called before the fragment has been attached to its activity; that
-     * is, you should call it immediately after constructing the fragment.  The
-     * arguments supplied here will be retained across fragment destroy and
-     * creation.
-     *
-     * @param args
-     */
-    @Override
-    public void setArguments(Bundle args) {
-        super.setArguments(args);
-
-
-        if (args != null && args.containsKey(PlayerManager.PLAYERMANAGER_NAME_KEY))
-            manager = args.getParcelable(PlayerManager.PLAYERMANAGER_NAME);
-
-    }
 
     /**
      * Called to do initial creation of a fragment.  This is called after
@@ -69,11 +51,8 @@ public class ListPlayers extends ListFragment {
         super.onCreate(savedInstanceState);
 
         //TODO Falla aquí
-        if (savedInstanceState == null && manager == null) {
+        if (savedInstanceState == null && manager == null)
             manager = new PlayerManager();
-        } else {
-            manager = savedInstanceState.getParcelable(PlayerManager.PLAYERMANAGER_NAME);
-        }
 
         setListAdapter(new ListAdapterPlayer(getContext(), R.layout.content_players_row, manager.getPlayers()));
     }
@@ -124,6 +103,7 @@ public class ListPlayers extends ListFragment {
 
     }
 
+
     /**
      * Called when a fragment is first attached to its context.
      * {@link #onCreate(Bundle)} will be called after this.
@@ -163,5 +143,24 @@ public class ListPlayers extends ListFragment {
         mCallBack.onPlayerSelected(manager.getPlayer(position));
 
         getListView().setItemChecked(position, true);
+    }
+
+    /**
+     * Supply the construction arguments for this fragment.  This can only
+     * be called before the fragment has been attached to its activity; that
+     * is, you should call it immediately after constructing the fragment.  The
+     * arguments supplied here will be retained across fragment destroy and
+     * creation.
+     *
+     * @param args
+     */
+    @Override
+    public void setArguments(Bundle args) {
+        super.setArguments(args);
+
+
+        if (args != null && args.containsKey(PlayerManager.PLAYERMANAGER_NAME_KEY))
+            manager = args.getParcelable(PlayerManager.PLAYERMANAGER_NAME_KEY);
+
     }
 }

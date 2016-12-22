@@ -11,6 +11,7 @@ import es.iesnervion.ejercicio52.R;
  */
 
 public class Team implements Parcelable {
+    public static final String Team_Key = "team";
     private int img;
     private String name;
     private String city;
