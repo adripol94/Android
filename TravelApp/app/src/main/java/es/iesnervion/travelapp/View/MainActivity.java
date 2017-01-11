@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import es.iesnervion.travelapp.Model.CardView;
+import es.iesnervion.travelapp.Model.CardViewObj;
 import es.iesnervion.travelapp.Model.RecyclerViewAdapter;
 import es.iesnervion.travelapp.R;
 
@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        CardView[] cardViews = {
-                new CardView("New York", R.drawable.new_york),
-                new CardView("London", R.drawable.london),
-                new CardView("Paris", R.drawable.france),
-                new CardView("Hamburg", R.drawable.hamburg),
-                new CardView("India", R.drawable.india)
+        CardViewObj[] cardViews = {
+                new CardViewObj("New York", R.drawable.new_york),
+                new CardViewObj("London", R.drawable.london),
+                new CardViewObj("Paris", R.drawable.france),
+                new CardViewObj("Hamburg", R.drawable.hamburg),
+                new CardViewObj("India", R.drawable.india)
         };
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list_cardview_recyclerView);

@@ -7,11 +7,11 @@ import android.os.Parcelable;
  * Created by adriol94 on 1/11/17.
  */
 
-public class CardView implements Parcelable {
+public class CardViewObj implements Parcelable {
     public int img;
     public String name;
 
-    public CardView(String name, int img) {
+    public CardViewObj(String name, int img) {
         this.img = img;
         this.name = name;
     }
@@ -28,20 +28,20 @@ public class CardView implements Parcelable {
         dest.writeString(this.name);
     }
 
-    protected CardView(Parcel in) {
+    protected CardViewObj(Parcel in) {
         this.img = in.readInt();
         this.name = in.readString();
     }
 
-    public static final Parcelable.Creator<CardView> CREATOR = new Parcelable.Creator<CardView>() {
+    public static final Parcelable.Creator<CardViewObj> CREATOR = new Parcelable.Creator<CardViewObj>() {
         @Override
-        public CardView createFromParcel(Parcel source) {
-            return new CardView(source);
+        public CardViewObj createFromParcel(Parcel source) {
+            return new CardViewObj(source);
         }
 
         @Override
-        public CardView[] newArray(int size) {
-            return new CardView[size];
+        public CardViewObj[] newArray(int size) {
+            return new CardViewObj[size];
         }
     };
 }
