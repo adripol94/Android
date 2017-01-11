@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(mLayoutManager);
 
 
-        adapter = new RecyclerViewAdapter(cardViews);
+        adapter = new RecyclerViewAdapter(cardViews, findViewById(R.id.content_main));
         recyclerView.setAdapter(adapter);
     }
 

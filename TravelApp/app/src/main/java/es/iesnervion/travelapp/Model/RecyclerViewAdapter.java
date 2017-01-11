@@ -1,5 +1,6 @@
 package es.iesnervion.travelapp.Model;
 
+import android.content.Context;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.CardView;
@@ -22,9 +23,11 @@ import es.iesnervion.travelapp.R;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     private CardViewObj[] cardViews;
+    private View v;
 
-    public RecyclerViewAdapter(CardViewObj[] cardViews) {
+    public RecyclerViewAdapter(CardViewObj[] cardViews, View v) {
         this.cardViews = cardViews;
+        this.v = v;
     }
 
     /**
@@ -52,8 +55,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         View v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.style_recyclerview, parent, false);
 
-        ViewHolder vh = new ViewHolder(v, R.id.textView_style_cardView,
-                R.id.relativeLayout_style_cardView, R.id.magia, R.id.card_view);
+        ViewHolder vh = new ViewHolder(v, R.id.textView_style_cardView, R.id.card_view);
 
         return vh;
     }
@@ -81,17 +83,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(RecyclerViewAdapter.ViewHolder holder, int position) {
         holder.getTextView().setText(cardViews[position].name);
-        holder.getRelativeLayout().setBackgroundResource(cardViews[position].img);
-        holder.getMagic().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "asd", Snackbar.LENGTH_LONG);
-            }
-        });
+
+        holder.getCardView().setBackgroundResource(cardViews[position].img);
+
         holder.getCardView().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "asdasd", Snackbar.LENGTH_LONG);
+                Snackbar.make(view.getRootView(), "asdasd", Snackbar.LENGTH_LONG).show();
             }
         });
     }
@@ -111,27 +109,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView textView;
-        private RelativeLayout relativeLayout;
-        private RelativeLayout magic;
         private CardView cv;
 
-        public ViewHolder(View v, int textViewId, int relativeLayoutId, int magicId, int cardId) {
+        public ViewHolder(View v, int textViewId, int cardId) {
             super(v);
             textView = (TextView) v.findViewById(textViewId);
-            relativeLayout = (RelativeLayout) v.findViewById(relativeLayoutId);
-            magic = (RelativeLayout) v.findViewById(magicId);
             cv = (CardView) v.findViewById(cardId);
         }
 
         public TextView getTextView(){
             return textView;
         }
-
-        public RelativeLayout getRelativeLayout(){
-            return relativeLayout;
-        }
-
-        public RelativeLayout getMagic(){ return magic; }
 
         public CardView getCardView() { return cv; }
     }
