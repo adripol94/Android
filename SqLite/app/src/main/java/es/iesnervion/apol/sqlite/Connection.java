@@ -6,4 +6,6 @@ package es.iesnervion.apol.sqlite;
 
 public interface Connection<T> {
     T getColumn(T obj);
+
+
 }

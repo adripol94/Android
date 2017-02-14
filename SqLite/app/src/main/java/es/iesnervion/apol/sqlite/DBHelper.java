@@ -163,7 +163,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
     public Cursor getPaises() {
         Cursor cur;
-        cur = getReadableDatabase().rawQuery("SLECT * FROM " + Paises.TABLE_NAME_PAISES + ";", null);
+        cur = getReadableDatabase().rawQuery("SELECT * FROM " + Paises.TABLE_NAME_PAISES + ";", null);
         return cur;
     }
 

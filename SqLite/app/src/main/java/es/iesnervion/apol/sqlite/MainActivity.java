@@ -4,12 +4,16 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.nfc.Tag;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
-public class MainActivity extends AppCompatActivity implements Connection<Pais>{
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity implements Connection<ArrayList<Pais>>{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements Connection<Pais>{
         DBHelper db = DBHelper.getInstacie(this);
         SQLiteDatabase helper = db.getReadableDatabase();
 
+        ejecutarAsincTask(new TaskPises(this), db);
 
 
     }
@@ -32,9 +37,10 @@ public class MainActivity extends AppCompatActivity implements Connection<Pais>{
     }
 
     @Override
-    public Pais getColumn(Pais obj) {
+    public ArrayList<Pais> getColumn(ArrayList<Pais> obj) {
         return null;
     }
+
 
     private class TaskPises extends AsyncTask<DBHelper, Void, Cursor> {
         private String[] columnasDeseadas = {Contrato.Paises.COLUMN_NAME_NOMBRE};
@@ -77,9 +83,23 @@ public class MainActivity extends AppCompatActivity implements Connection<Pais>{
          */
         @Override
         protected void onPostExecute(Cursor cursor) {
+            String nombre, poblacion;
+            int id;
+            ArrayList<Pais> paises = new ArrayList<>();
+
             Connection con = (Connection) c;
-            //TODO what do with a cursor here
-            con.getColumn(null);
+            if (cursor.moveToFirst()) {
+                do {
+                    id = cursor.getInt(1);
+                    nombre = cursor.getString(1);
+                    poblacion = cursor.getString(2);
+                    paises.add(new Pais(id, nombre, poblacion));
+                } while (cursor.moveToFirst());
+            }
+
+            cursor.close();
+
+            con.getColumn(paises);
         }
     }
 }
