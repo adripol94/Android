@@ -10,6 +10,8 @@ import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -22,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements Connection<ArrayL
         Cursor cru;
 
         DBHelper db = DBHelper.getInstacie(this);
-        SQLiteDatabase helper = db.getReadableDatabase();
 
         ejecutarAsincTask(new TaskPises(this), db);
 
@@ -37,8 +38,15 @@ public class MainActivity extends AppCompatActivity implements Connection<ArrayL
     }
 
     @Override
-    public ArrayList<Pais> getColumn(ArrayList<Pais> obj) {
-        return null;
+    public void getColumn(ArrayList<Pais> obj) {
+
+        ListView listView = (ListView)findViewById(R.id.listview);
+        String[] p = new String[obj.size()];
+
+        for (int i=0; i < obj.size(); i++)
+            p[i] = obj.get(i).getNombre();
+
+        listView.setAdapter(new ArrayAdapter<>(this, R.layout.row, R.id.tv,p));
     }
 
 
@@ -90,11 +98,11 @@ public class MainActivity extends AppCompatActivity implements Connection<ArrayL
             Connection con = (Connection) c;
             if (cursor.moveToFirst()) {
                 do {
-                    id = cursor.getInt(1);
+                    id = cursor.getInt(0);
                     nombre = cursor.getString(1);
                     poblacion = cursor.getString(2);
                     paises.add(new Pais(id, nombre, poblacion));
-                } while (cursor.moveToFirst());
+                } while (cursor.moveToNext());
             }
 
             cursor.close();
