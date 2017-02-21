@@ -1,17 +1,150 @@
 [
     {
-        "outputFile": "/Volumes/Developer/Android/ListaViewHolder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 52,
-                    "endOffset": 103
+                    "endColumn": 60,
+                    "endOffset": 111
                 },
                 "from": {
-                    "file": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/values/strings.xml",
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 60,
+                        "endOffset": 112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 116,
+                    "endColumn": 61,
+                    "endOffset": 173
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 117,
+                        "endColumn": 61,
+                        "endOffset": 174
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 178,
+                    "endColumn": 61,
+                    "endOffset": 235
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 179,
+                        "endColumn": 61,
+                        "endOffset": 236
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 240,
+                    "endColumn": 63,
+                    "endOffset": 299
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 241,
+                        "endColumn": 63,
+                        "endOffset": 300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 926,
+                    "endColumn": 58,
+                    "endOffset": 980
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1934,
+                        "endColumn": 58,
+                        "endOffset": 1988
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 985,
+                    "endColumn": 56,
+                    "endOffset": 1037
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1993,
+                        "endColumn": 56,
+                        "endOffset": 2045
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1042,
+                    "endColumn": 53,
+                    "endOffset": 1091
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 2050,
+                        "endColumn": 53,
+                        "endOffset": 2099
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1096,
+                    "endColumn": 52,
+                    "endOffset": 1144
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -23,14 +156,14 @@
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 108,
+                    "startOffset": 1149,
                     "endColumn": 52,
-                    "endOffset": 156
+                    "endOffset": 1197
                 },
                 "from": {
-                    "file": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/values/strings.xml",
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -42,14 +175,14 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 161,
+                    "startOffset": 1202,
                     "endColumn": 50,
-                    "endOffset": 207
+                    "endOffset": 1248
                 },
                 "from": {
-                    "file": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/values/strings.xml",
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -61,14 +194,14 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 212,
+                    "startOffset": 1253,
                     "endColumn": 76,
-                    "endOffset": 284
+                    "endOffset": 1325
                 },
                 "from": {
-                    "file": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/values/strings.xml",
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -80,20 +213,83 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 289,
+                    "startOffset": 1330,
                     "endColumn": 57,
-                    "endOffset": 342
+                    "endOffset": 1383
                 },
                 "from": {
-                    "file": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/values/styles.xml",
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 17,
                         "endColumn": 58,
                         "endOffset": 71
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1388,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1849
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 2105,
+                        "endLine": 45,
+                        "endColumn": 12,
+                        "endOffset": 2566
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1854,
+                    "endLine": 25,
+                    "endColumn": 12,
+                    "endOffset": 1975
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2572,
+                        "endLine": 49,
+                        "endColumn": 12,
+                        "endOffset": 2693
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1980,
+                    "endLine": 28,
+                    "endColumn": 12,
+                    "endOffset": 2103
+                },
+                "from": {
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 2699,
+                        "endLine": 53,
+                        "endColumn": 12,
+                        "endOffset": 2822
                     }
                 }
             }

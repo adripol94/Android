@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Volumes/Developer/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable/calendar48x48.png",
-        "source": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/drawable/calendar48x48.png"
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable/calendar48x48.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/drawable/calendar48x48.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable/compass48x48.png",
-        "source": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/drawable/compass48x48.png"
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable/alarm48x48.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/drawable/alarm48x48.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable/delete.png",
-        "source": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/drawable/delete.png"
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable/delete.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/drawable/delete.png"
     },
     {
-        "merged": "/Volumes/Developer/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable/alarm48x48.png",
-        "source": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/drawable/alarm48x48.png"
+        "merged": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/res/merged/debug/drawable/compass48x48.png",
+        "source": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/drawable/compass48x48.png"
     }
 ]

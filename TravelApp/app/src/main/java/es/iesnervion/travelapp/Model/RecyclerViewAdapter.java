@@ -85,13 +85,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.getTextView().setText(cardViews[position].name);
 
         holder.getCardView().setBackgroundResource(cardViews[position].img);
-
-        holder.getCardView().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view.getRootView(), "asdasd", Snackbar.LENGTH_LONG).show();
-            }
-        });
     }
 
     /**
@@ -107,7 +100,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView textView;
         private CardView cv;
 
@@ -115,6 +108,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(v);
             textView = (TextView) v.findViewById(textViewId);
             cv = (CardView) v.findViewById(cardId);
+            v.setOnClickListener(this);
         }
 
         public TextView getTextView(){
@@ -122,5 +116,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         }
 
         public CardView getCardView() { return cv; }
+
+        /**
+         * Called when a view has been clicked.
+         *
+         * @param v The view that was clicked.
+         */
+        @Override
+        public void onClick(View v) {
+            Snackbar.make(v, "you're in " + textView.getText(), Snackbar.LENGTH_LONG).show();
+        }
     }
 }

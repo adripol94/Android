@@ -15,7 +15,7 @@ import es.iesnervion.travelapp.Model.CardViewObj;
 import es.iesnervion.travelapp.Model.RecyclerViewAdapter;
 import es.iesnervion.travelapp.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends RecyclerViewActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,4 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    class AdapterCardView extends RecyclerView.Adapter<>
 }

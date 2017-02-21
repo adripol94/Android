@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Volumes/Developer/Android/ListaViewHolder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+        "outputFile": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 113
                 },
                 "from": {
-                    "file": "/Volumes/Developer/Android/ListaViewHolder/app/src/main/res/values-v11/styles.xml",
+                    "file": "/home/apol/AndroidStudioProjects/Android/ListaViewHolder/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

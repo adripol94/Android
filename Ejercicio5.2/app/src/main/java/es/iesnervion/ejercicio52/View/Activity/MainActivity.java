@@ -1,10 +1,10 @@
 package es.iesnervion.ejercicio52.View.Activity;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,11 +14,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 
 import es.iesnervion.ejercicio52.Models.PlayerException;
 import es.iesnervion.ejercicio52.Models.PlayerManager;
@@ -28,7 +30,6 @@ import es.iesnervion.ejercicio52.View.Fragments.ListTeams;
 import es.iesnervion.ejercicio52.Models.Player;
 import es.iesnervion.ejercicio52.Models.Team;
 import es.iesnervion.ejercicio52.R;
-import es.iesnervion.ejercicio52.View.Fragments.PlaceholderFragment;
 
 public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadTeamSelected, ListPlayers.OnHeadPlayerSelected{
 
@@ -57,52 +58,26 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
     /** Manejadora de {@link Player} */
     private PlayerManager manager;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // inside your activity (if you did not enable transitions in your theme)
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+
+// set an exit transition
+        getWindow().setExitTransition(new Explode());
+
         setContentView(R.layout.activity_main);
+        manager = new PlayerManager();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //Edited Cambiar a false para eliminar el boton atras
          getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-
-
-
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setVisibility(View.INVISIBLE);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, AddPlayer.class);
-                startActivityForResult(it, AddPlayer.ADDPLAYER_REQUEST);
-            }
-        });
-
-    }
-
-    /**
-     * Dispatch onResume() to fragments.  Note that for better inter-operation
-     * with older versions of the platform, at the point of this call the
-     * fragments attached to the activity are <em>not</em> resumed.  This means
-     * that in some cases the previous state may still be saved, not allowing
-     * fragment transactions that modify the state.  To correctly interact
-     * with fragments in their proper state, you should instead override
-     * {@link #onResumeFragments()}.
-     */
-    @Override
-    protected void onResume() {
-        super.onResume();
-
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        if (manager != null)
-            mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(), manager);
-        else {
-            manager = new PlayerManager();
-            mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        }
+        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
@@ -131,13 +106,42 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
 
             }
         });
+
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setVisibility(View.INVISIBLE);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainActivity.this, AddPlayer.class);
+                startActivityForResult(it, AddPlayer.ADDPLAYER_REQUEST,
+                        ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, view, "AddPlayer")
+                                .toBundle());
+
+
+            }
+        });
+
+
+
     }
 
+    /**
+     * Dispatch onResume() to fragments.  Note that for better inter-operation
+     * with older versions of the platform, at the point of this call the
+     * fragments attached to the activity are <em>not</em> resumed.  This means
+     * that in some cases the previous state may still be saved, not allowing
+     * fragment transactions that modify the state.  To correctly interact
+     * with fragments in their proper state, you should instead override
+     * {@link #onResumeFragments()}.
+     */
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        outState.putParcelable(PlayerManager.PLAYERMANAGER_NAME_KEY, manager);
-        super.onSaveInstanceState(outState);
+    protected void onResume() {
+        super.onResume();
+
+
+
     }
+
 
     /**
      * Dispatch incoming result to the correct fragment.
@@ -218,38 +222,135 @@ public class MainActivity extends AppCompatActivity implements ListTeams.OnHeadT
     }
 
     /**
+     * A placeholder fragment containing a simple view.
+     */
+    public static class PlaceholderFragment extends Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
+        private PlayerManager manager;
+
+        public PlaceholderFragment() {
+        }
+
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static PlaceholderFragment newInstance(int sectionNumber) {
+            PlaceholderFragment fragment = new PlaceholderFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        /**
+         * Infla los frragments necesarios dependiendo de la posicion en la que este
+         * por medio de {@value ARG_SECTION_NUMBER}.
+         *
+         * @param inflater
+         * @param container
+         * @param savedInstanceState
+         * @return
+         */
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = null;
+
+
+            if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
+                rootView = inflater.inflate(R.layout.fragment_teams, container, false);
+
+                // Comprobación del tipo de pantalla en la que está, para ello llamamos a el fragment team
+                // (el .xml que deberia de salir en caso de que sea un movil y si no esta nulo significa
+                // que es un movil, si de lo contrario sale una table se iniciará el otro .xml de sw620dp
+
+                if (rootView.findViewById(R.id.fragment_team_movil) != null) {
+
+
+                    // Comprobamos si viene de un estado onStoped osea que sea la primera vez que se
+                    // ejecuta o no
+
+                    if (savedInstanceState != null)
+                        return rootView;
+
+                    // Creamos una instancia del fragment lista y lo añadimos en la actividad destinada
+                    // para el movil.
+
+
+                    ListTeams list = new ListTeams();
+
+                    list.setArguments(getActivity().getIntent().getExtras());
+
+                    // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
+                    // gracias a esto pondremos todos las propiedades preparada de ese
+                    // fragment en el fragment
+                    getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_team_movil, list)
+                            .commit();
+                }
+
+            } else {
+
+                rootView = inflater.inflate(R.layout.fragment_players, container, false);
+
+
+                ListPlayers list = new ListPlayers();
+
+                //TODO falla aqui...
+                Intent it = getActivity().getIntent();
+
+                if (manager != null) {
+                    it.putExtra(PlayerManager.PLAYERMANAGER_NAME_KEY, manager);
+                }
+
+                list.setArguments(it.getExtras());
+
+
+                // Con FragmentManager podremos interactuar entre el fragment_movil y la clase list
+                // gracias a esto pondremos todos las propiedades preparada de ese
+                // fragment en el fragment
+                getActivity().getSupportFragmentManager().beginTransaction().add(R.id.fragment_players, list)
+                        .commit();
+            }
+            return rootView;
+        }
+
+        /**
+         * Supply the construction arguments for this fragment.  This can only
+         * be called before the fragment has been attached to its activity; that
+         * is, you should call it immediately after constructing the fragment.  The
+         * arguments supplied here will be retained across fragment destroy and
+         * creation.
+         *
+         * @param args
+         */
+        @Override
+        public void setArguments(Bundle args) {
+            super.setArguments(args);
+            manager = args.getParcelable(PlayerManager.PLAYERMANAGER_NAME_KEY);
+        }
+    }
+
+    /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
-     *
-     * Antes estaba con {@link FragmentPagerAdapter} pero se ha cambiado a
-     * {@link FragmentStatePagerAdapter}!!
-     *
-     * {@link FragmentPagerAdapter} no destruye el fragment pero {@link FragmentStatePagerAdapter}
-     * si que destruye el fragment
-     *
-     * http://stackoverflow.com/questions/12581896/fragmentpageradapter-getitem-is-not-called
      */
-    public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
-        private PlayerManager manager;
+    public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
-        }
-
-        public SectionsPagerAdapter(FragmentManager fm, PlayerManager manager) {
-            super(fm);
-            this.manager = manager;
-
         }
 
         @Override
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            if (manager == null)
-                return PlaceholderFragment.newInstance(position + 1);
-            else
-                return PlaceholderFragment.newInstance(position + 1, manager);
+            return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override
