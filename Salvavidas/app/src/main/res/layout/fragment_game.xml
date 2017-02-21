@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.iesnervion.salvavidas.GameFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="piedra"
+        android:id="@+id/piedra"
+        android:layout_gravity="top|left"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="papel"
+        android:id="@+id/papel"
+        android:layout_gravity="top|center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="tijeras"
+        android:id="@+id/tijeras"
+        android:layout_gravity="top|right"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/resultado"
+        android:textSize="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="piedra"
+        android:id="@+id/MacPiedra"
+        android:layout_gravity="bottom|left"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="papel"
+        android:id="@+id/MacPapel"
+        android:layout_gravity="bottom|center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="tijeras"
+        android:id="@+id/MacTijeras"
+        android:layout_gravity="bottom|right"/>
+
+</FrameLayout>
